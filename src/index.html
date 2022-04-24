@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Buy property</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-push-2">
+          <h1 class="text-center">Buy property</h1>
+          <hr/>
+          <br/>
+        </div>
+      </div>
+
+      <div id="propertiesRow" class="row">
+        <!-- PROPERTIES LOAD HERE -->
+      </div>
+    </div>
+
+    <div id="propertyTemplate" style="display: none;">
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="panel panel-default panel-property" style="height: 40rem;">
+          <div class="panel-heading">
+            <h3 class="panel-title">Panel title</h3>
+          </div>
+          <div class="panel-body">
+            <img alt="house" data-src="holder.js/140x140" class="img-rounded img-center" style="width: 100%; height: 15rem;" src="./house.jpg" data-holder-rendered="true">
+            <br/><br/>
+            <strong>Address</strong>: <span class="property-address">address</span><br/>
+            <strong>Postal Zip</strong>: <span class="property-postal">postal zip</span><br/>
+            <strong>Region</strong>: <span class="property-region">region</span><br/>
+
+            <div class="btn-toolbar">
+              <button class="btn btn-primary btn-buy" style="float: right;" type="button" data-id="0">Buy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
